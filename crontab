@@ -1,0 +1,18 @@
+# .---------------- minute (0 - 59)
+# |  .------------- hour (0 - 23)
+# |  |  .---------- day of month (1 - 31)
+# |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...
+# |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7)  OR sun,mon,tue,wed,thu,fri,sat
+# |  |  |  |  |
+# *  *  *  *  *  command to be executed
+
+# Midnight Sunday UTC is 6pm Saturday MDT or ??? MST
+# Swith to 7am Local Time
+  0  7  *  *  sun ~/raisingKids/createPSSPost.py > ~/logs/PSSPost.log 2>&1
+
+# Midnight Tuesday UTC is 6pm Monday MDT or ??? MST
+  0  7  *  *  tue ~/raisingKids/createGTTPost.py > ~/logs/GTTPost.log 2>&1
+
+# Midnight Friday UTC is 6pm Thursday MDT or ??? MST
+#  0  7  *  *  fri ~/raisingKids/createFAQFridayPost.py > ~/logs/FFPost.log 2>&1
+
