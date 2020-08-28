@@ -8,9 +8,9 @@ You'll still need to install PRAW.    You also need to set a username/password i
 
 There are three scripts.  
 
-createFAQFridayPost.py
-createGTTPost.py
-createPSSPost.py
+* createFAQFridayPost.py
+* createGTTPost.py
+* createPSSPost.py
 
 
 createFAQFridayPost.py is slightly more complicated than the other two.
